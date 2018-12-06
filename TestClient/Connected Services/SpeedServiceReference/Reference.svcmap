@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="42f35117-fd0e-4f2f-b824-80a3fd9b0d4b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8092/speedservice" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SpeedService.wsdl" MetadataType="Wsdl" ID="3ad7abb6-b0ca-4caa-bd64-f351c1327f4b" SourceId="1" SourceUrl="http://localhost:8092/speedservice?wsdl" />
+    <MetadataFile FileName="speedservice.disco" MetadataType="Disco" ID="499a57dd-6039-4c95-b9a1-1751bc633414" SourceId="1" SourceUrl="http://localhost:8092/speedservice?disco" />
+    <MetadataFile FileName="speedservice.xsd" MetadataType="Schema" ID="852c356a-a83d-4194-bd7d-72ad243dd06b" SourceId="1" SourceUrl="http://localhost:8092/speedservice?xsd=xsd0" />
+    <MetadataFile FileName="speedservice1.xsd" MetadataType="Schema" ID="241c7ed8-4eea-47dd-9eb0-0157d8d21484" SourceId="1" SourceUrl="http://localhost:8092/speedservice?xsd=xsd1" />
+    <MetadataFile FileName="speedservice2.xsd" MetadataType="Schema" ID="f5bde4ec-81f2-493b-b753-a55868f6e570" SourceId="1" SourceUrl="http://localhost:8092/speedservice?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
