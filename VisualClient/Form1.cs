@@ -31,16 +31,7 @@ namespace VisualClient
             feed.FeedNewSale();
 
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void salesNoText_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void batchButton_Click(object sender, EventArgs e)
         {

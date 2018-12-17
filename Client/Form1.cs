@@ -18,10 +18,6 @@ namespace Client
             InitializeComponent();
         }
 
-        private void yearTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void getSalesButton_Click(object sender, EventArgs e)
         {
@@ -33,11 +29,6 @@ namespace Client
 
             resultLabel.Text = count.ToString() + " salg i år " + year;
 
-        }
-
-        private void resultLabel_Click(object sender, EventArgs e)
-        {
-
-        }
+        }    
     }
 }
