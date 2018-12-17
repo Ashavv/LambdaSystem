@@ -1,5 +1,4 @@
-﻿using Core;
-using DataReceiver;
+﻿using DataReceiver;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,13 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VisualClient
+namespace ControlClient
 {
     public partial class Form1 : Form
     {
         private BatchServiceReference.IBatchService batchService = new BatchServiceReference.BatchServiceClient();
-        private SpeedServiceReference.ISpeedService speedService = new SpeedServiceReference.SpeedServiceClient();
-        private QueryServiceReference.IQueryService queryService = new QueryServiceReference.QueryServiceClient();
         FeedSimulator feed = new FeedSimulator();
 
         public Form1()
@@ -26,25 +23,13 @@ namespace VisualClient
 
         private void insertButton_Click(object sender, EventArgs e)
         {
-            
-
             feed.FeedNewSale();
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void salesNoText_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void batchButton_Click(object sender, EventArgs e)
         {
             batchService.ComputeSalesByYearBatchView();
+
         }
     }
 }

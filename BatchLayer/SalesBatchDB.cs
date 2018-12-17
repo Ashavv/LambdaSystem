@@ -59,8 +59,6 @@ namespace BatchLayer
         //COMPUTE BATCH VIEW OF SALES FOR EVERY YEAR
         public void ComputeSalesByYearBatchView()
         {
-            System.Threading.Thread.Sleep(2000);
-
 
             try
             {
@@ -89,9 +87,6 @@ namespace BatchLayer
                                         int count = reader.GetInt32(reader.GetOrdinal("Count"));
 
                                         counts.Add(year, count);
-
-                                        Console.WriteLine(reader.GetInt32(reader.GetOrdinal("Count")));
-                                        Console.WriteLine("year " + year);
                                     }
                                 }
                             }
@@ -161,9 +156,7 @@ namespace BatchLayer
 
         private void InsertNewBatchView(SqlConnection connection)
         {
-            TransactionOptions options = new TransactionOptions();
-            options.IsolationLevel = System.Transactions.IsolationLevel.Serializable;
-            using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, options))
+            using (TransactionScope scope = new TransactionScope())
             {
                 try
                 {

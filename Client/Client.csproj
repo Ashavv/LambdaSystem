@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4739328A-E68B-41E0-9B27-3584074CD954}</ProjectGuid>
+    <ProjectGuid>{91D7A3B2-CEDB-4745-A98F-728011F7FAC8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>VisualClient</RootNamespace>
-    <AssemblyName>VisualClient</AssemblyName>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,17 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\BatchServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\QueryServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\SpeedServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -82,31 +72,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\BatchServiceReference\BatchService.wsdl" />
-    <None Include="Connected Services\BatchServiceReference\batchservice.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BatchServiceReference\batchservice1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BatchServiceReference\batchservice2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\QueryServiceReference\QueryService.wsdl" />
     <None Include="Connected Services\QueryServiceReference\queryservice.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\QueryServiceReference\queryservice1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SpeedServiceReference\SpeedService.wsdl" />
-    <None Include="Connected Services\SpeedServiceReference\speedservice.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SpeedServiceReference\speedservice1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SpeedServiceReference\speedservice2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -126,9 +96,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\BatchServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\QueryServiceReference\" />
-    <WCFMetadataStorage Include="Connected Services\SpeedServiceReference\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\QueryServiceReference\queryservice.disco" />
@@ -141,46 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\QueryServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{1EE85006-DD2F-4FB6-AF29-79C839EBCCB1}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataReceiver\DataReceiver.csproj">
-      <Project>{b3de701d-568f-4dc6-8702-900034487bce}</Project>
-      <Name>DataReceiver</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\BatchServiceReference\batchservice.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\BatchServiceReference\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\BatchServiceReference\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\BatchServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\SpeedServiceReference\speedservice.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\SpeedServiceReference\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\SpeedServiceReference\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\SpeedServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

@@ -1,4 +1,4 @@
-﻿namespace VisualClient
+﻿namespace ControlClient
 {
     partial class Form1
     {
@@ -34,21 +34,21 @@
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(144, 188);
+            this.insertButton.Location = new System.Drawing.Point(103, 233);
             this.insertButton.Name = "insertButton";
-            this.insertButton.Size = new System.Drawing.Size(152, 68);
+            this.insertButton.Size = new System.Drawing.Size(206, 77);
             this.insertButton.TabIndex = 0;
-            this.insertButton.Text = "Insert Sale";
+            this.insertButton.Text = "Insert new sale";
             this.insertButton.UseVisualStyleBackColor = true;
             this.insertButton.Click += new System.EventHandler(this.insertButton_Click);
             // 
             // batchButton
             // 
-            this.batchButton.Location = new System.Drawing.Point(393, 188);
+            this.batchButton.Location = new System.Drawing.Point(438, 233);
             this.batchButton.Name = "batchButton";
-            this.batchButton.Size = new System.Drawing.Size(175, 68);
-            this.batchButton.TabIndex = 2;
-            this.batchButton.Text = "Compute Batch Views";
+            this.batchButton.Size = new System.Drawing.Size(201, 77);
+            this.batchButton.TabIndex = 1;
+            this.batchButton.Text = "Start Batch computation";
             this.batchButton.UseVisualStyleBackColor = true;
             this.batchButton.Click += new System.EventHandler(this.batchButton_Click);
             // 
@@ -61,7 +61,6 @@
             this.Controls.Add(this.insertButton);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SalesOrderHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrderDetails" nillable="true" type="tns:ArrayOfSalesOrderDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalesOrderHeader" nillable="true" type="tns:SalesOrderHeader" />
+  <xs:complexType name="ArrayOfSalesOrderDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SalesOrderDetail" nillable="true" type="tns:SalesOrderDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSalesOrderDetail" nillable="true" type="tns:ArrayOfSalesOrderDetail" />
+  <xs:complexType name="SalesOrderDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalesOrderDetail" nillable="true" type="tns:SalesOrderDetail" />
+</xs:schema>
